@@ -29,16 +29,6 @@
 (recentf-mode 1)
 
 (require 'setup-packages)
-(require 'setup-look-and-feel)
-(require 'setup-ido)
-
-(require 'setup-org)
-(require 'setup-c)
-(require 'setup-go)
-(require 'setup-lisp)
-(require 'setup-scheme)
-(require 'setup-clojure)
-(require 'setup-haskell)
 
 (global-set-key (kbd "C-s") #'isearch-forward-regexp)
 (global-set-key (kbd "C-M-s") #'isearch-forward)
@@ -132,5 +122,13 @@
 
 ;; (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
 
+(require 'setup-look-and-feel)
+(require 'setup-ido)
 
-
+(require 'setup-org)
+(require 'setup-c)
+(require 'setup-go)
+(require 'setup-lisp)
+(require 'setup-scheme)
+(require 'setup-clojure)
+(require 'setup-haskell)
