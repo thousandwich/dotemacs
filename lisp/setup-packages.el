@@ -1,7 +1,15 @@
+(require 'cl)
 
 (defvar ths/packages '())
 (setf ths/packages
-      '(ido-vertical-mode
+      '(auto-complete
+	go-autocomplete
+	ac-geiser
+
+	geiser
+
+	smex
+	ido-vertical-mode
 	ido-ubiquitous
 	ido-at-point
 	flx
@@ -12,11 +20,12 @@
 
 	desktop
 	smartparens
-	;; ido-yes-or-no
+	ido-yes-or-no
 
 	expand-region
 
 	magit
+	solarized-theme
 	))
 
 (defun ths/ensure-packages (skip-refresh)
